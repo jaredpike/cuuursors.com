@@ -1,0 +1,17 @@
+.main {
+  @include vertical-padding(8rem, 12rem);
+  @extend %container;
+
+  z-index: -z(content);
+  position: relative;
+}
+
+.intro {
+  @include for-tablet-landscape-up {
+    margin-bottom: 10rem;
+  }
+
+  @include for-tablet-portrait-down {
+    margin-bottom: 4rem;
+  }
+}

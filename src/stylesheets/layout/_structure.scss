@@ -1,0 +1,38 @@
+html {
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-size: 1rem;
+  background-color: -color(primary);
+  background-size: 10%;
+  background-attachment: fixed;
+}
+
+main {
+  min-height: 100vh;
+}
+
+%container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+
+  @include for-tablet-landscape-up {
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+  }
+}
+
+.main {
+  @extend %container;
+  @include vertical-padding(12rem);
+}
+
+.wrapper {
+  @include for-tablet-landscape-up {
+    display: flex;
+  }
+}

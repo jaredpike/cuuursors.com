@@ -1,0 +1,9 @@
+query {
+  social: getSocialSettings {
+    image {
+      path
+    }
+    description
+    title
+  }
+}

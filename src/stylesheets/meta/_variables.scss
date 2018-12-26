@@ -1,0 +1,35 @@
+$typeface-primary: 'Helvetica', sans-serif;
+$typeface-secondary: $typeface-primary;
+
+$spacing-unit: 2.4rem;
+
+$colors: (
+  black: #0F0F0F,
+  subdued: #aaa,
+  primary: #0029ff,
+  white: #ffffff,
+);
+
+$font-weights: (
+  thin: 100,
+  extra-light: 200,
+  light: 300,
+  regular: 400,
+  medium: 500,
+  semi-bold: 600,
+  bold: 700,
+  heavy: 800,
+  black: 900
+);
+
+$layers: (
+  background,
+  content,
+  dropdown,
+  subnav,
+  mobile-nav,
+  header,
+  banner,
+  overlay,
+  modal
+);

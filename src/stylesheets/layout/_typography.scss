@@ -1,0 +1,75 @@
+div,
+p,
+span,
+li,
+small,
+label,
+input,
+select,
+button,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+em,
+ins,
+cite,
+figure,
+blockquote {
+  @include font-smoothing(on);
+
+  text-rendering: optimizeLegibility;
+}
+
+$default-type-color: -color(white);
+
+@mixin hd-a($color: $default-type-color, $line-height: 1.2) {
+  font-family: $typeface-primary;
+  color: $color;
+  font-size: 3.4rem;
+  font-weight: -weight(bold);
+  line-height: $line-height;
+
+  @include for-tablet-landscape-up {
+    font-size: 5.6rem;
+  }
+}
+
+@mixin copy-a($color: $default-type-color, $line-height: 1.5) {
+  font-family: $typeface-secondary;
+  color: $color;
+  font-size: 1.6rem;
+  font-weight: -weight(regular);
+  line-height: $line-height;
+}
+
+@mixin dek($color: $default-type-color, $line-height: 1.5) {
+  font-family: $typeface-primary;
+  color: $color;
+  font-size: 2.1rem;
+  font-weight: -weight(regular);
+  line-height: $line-height;
+}
+
+@mixin caption($color: $default-type-color, $line-height: 1.5) {
+  font-family: $typeface-primary;
+  color: $color;
+  font-size: 1.4rem;
+  font-weight: -weight(regular);
+  line-height: $line-height;
+}
+
+@mixin link() {
+  font-family: $typeface-secondary !important;
+  color: $default-type-color;
+  font-size: 1.6rem;
+  text-decoration: underline;
+
+  &:hover {
+    color: #c6ffdd;
+  }
+}
