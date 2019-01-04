@@ -1,9 +1,9 @@
 {
-  "name": "rocket-onboarding",
+  "name": "cuuursors.com",
   "version": "1.0.0",
-  "description": "Onboarding microsite for Rocket Insights",
+  "description": "Website for cuuursors.com",
   "main": "index.js",
-  "repository": "https://github.com/jaredpike/rocket-handbook",
+  "repository": "https://github.com/jaredpike/cuuursors.com",
   "author": "Jared Pike",
   "license": "MIT",
   "private": true,
